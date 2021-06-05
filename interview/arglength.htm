@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total no. of arguments</title>
+</head>
+<body>
+    <h4>function returns total number of arguments</h4>
+    <script>
+        let x = function(){
+            return [].slice.call(arguments).length;
+        };
+        console.log(x(1,2,3,4,5));
+        console.log(x(7,8,9,0,90,0,0,9))
+
+    </script>
+</body>
+</html>

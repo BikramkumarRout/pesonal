@@ -1,0 +1,27 @@
+<head>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#in").click(function(){
+                $("#pic").fadeIn(1000);
+            });
+            $("#out").click(function(){
+                $("#pic").fadeOut(2000);
+            });
+            $("#toggle").click(function(){
+                $("#pic").fadeToggle('slow',function(){
+                    alert("Animation Finish");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <button id="in">Fade In</button>
+        <button id="out">Fade Out</button>
+        <button id="toggle">Toggle</button>
+        <br>
+        <img src="../images/tv.jpg" alt="tv" id="pic" width="100" height="100">
+    </div>
+</body>

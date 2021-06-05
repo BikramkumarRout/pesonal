@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+      input[type ="button"]{
+          background-color: yellow;
+          border: 1px solid black;
+      }
+      input[type="password"]{
+          background-color: lightgoldenrodyellow;
+      }
+      input[type="text"]{
+          background-color: lightgreen;
+      }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>First Name</dt>
+            <dd><input type="text"></dd>
+            <dt>Last Name</dt>
+            <dd><input type="text"></dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Gender</dt>
+            <dd>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </dd>
+        </dl>
+        <input type="button" value="Register">
+        <input type="button" value="cancel">
+    </form>
+</body>
+</html>

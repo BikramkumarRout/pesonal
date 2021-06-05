@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Demo</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       input:focus{
+           box-shadow: 0px 3px 4px darkcyan;
+           border: 1px solid darkcyan;
+       }
+       #mobile+span{
+           display: none;
+       }
+       #mobile:focus+span{
+           display: inline;
+       }
+       #uname+span{
+           display: none;
+       }
+       #uname:focus+span{
+           display: inline;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text" id="uname">
+            <span>Name 4 to 10 chars</span>
+            </dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Mobile</dt>
+            <dd><input type="text" id="mobile" placeholder="+91 10 digits">
+            <span>+91 10 digits number</span></dd>
+        </dl>
+    </div>
+</body>
+</html>

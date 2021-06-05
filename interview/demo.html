@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Qstn(JS)</title>
+</head>
+<body>
+  <p>Encoded Url & Decoded Url</p>
+  <button onclick="myFunction()">Click Me</button>
+<div onclick="console.log('first div')">
+    <div onclick="console.log('second div')">
+      <button onclick="console.log('button')">
+        Click!
+      </button>
+    </div>
+  </div>
+    <script>
+      // url encode & decode:-
+      function myFunction(){
+        var url= "what is about me?";
+        var encode = encodeURI(url);
+        console.log(encode);
+        var decode = decodeURI(encode);
+        console.log(decode);
+      }
+        /* var a = [1,2,3,45,4,5].reduce(function(x,y){return x+y});
+        console.log(a)
+ */
+var str1 = "freecodecamp is the best place to learn";
+var str2 = "frontend and backend development"
+//charAt
+console.log(str1.charAt(1));
+console.log(str1.charCodeAt(1));
+console.log(str1.concat(str2));
+console.log(str1.endsWith("to"))
+//console.log(str1.fromCharCode(114))
+console.log(str2.includes("end"));
+console.log(str2.indexOf("end"));
+console.log(str2.lastIndexOf("end"));
+console.log(str2.match(/end/));
+console.log(str2.match(/end/g));
+console.log(str2.repeat(3));
+console.log(str2.replace(/end/g,"END"));
+console.log(str2.search("end"));
+console.log(str2.slice(2,4));
+console.log(str2.split(" ").reverse());
+console.log(str1.startsWith("free"));
+console.log(str2.substr(2,4));
+console.log(str2.substring(2,4));
+console.log(str1.toLowerCase());
+console.log(str1.toUpperCase());
+var str3 = "  biki  ram  ";
+console.log(str3.trim());
+
+//array manipulation:-
+var ar =[1,,2,3,4,5,6,7,8,81,21,32,33,211,211,51,51];
+console.log(ar.filter(age=>age>10));
+var bt = [...new Set(ar)];
+console.log(bt);
+// array all manipulation
+const companies = [
+  {name:"comp1", category:"Finance", start:1981, end:2003},
+  {name:"comp2", category:"Retail", start:1992, end:2008},
+  {name:"comp3", category:"Auto", start:1999, end:2007},
+  {name:"comp4", category:"Retail", start:1989, end:2010},
+  {name:"comp5", category:"Technology", start:2009, end:2014},
+  {name:"comp6", category:"Finance", start:1987, end:2010},
+  {name:"comp7", category:"Auto", start:1986, end:1996},
+  {name:"comp8", category:"Technology", start:1981, end:1989}
+];
+const ages = [33,12,20,16,5,54,21,44,61,13,15,45,25,64,32];
+//forEach
+companies.forEach(function(company){
+  console.log(company);
+})
+
+//filter with arrow function
+const CanDrink = ages.filter(function(age){
+  if(age >= 21){
+    return true;
+  }
+});
+console.log(CanDrink);
+
+//forloop
+
+for(let i=0;i<companies.length;i++){
+  console.log(companies[i]);//document.write(companies[i])
+}
+const age21 = ages.filter((age) => age>= 21)
+document.write(age21);
+document.write("</br>")
+/* companies.forEach(function(company){
+})
+ */
+ // find the max. no. in an array
+ const ad = [1,3,5];
+ document.write(Math.max(...ad));
+
+ //sum of an array
+ function sum(x,w,y,z) {
+   return x + w + y +z
+ }
+ const num = [1,2,3,4];
+ console.log(sum(...num));
+ const ds = [12,12,13,13];
+ const rd = ds.reduce((x,y)=>x+y,90);
+ console.log(rd)
+ </script>   
+</body>
+</html>

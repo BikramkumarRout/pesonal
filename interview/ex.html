@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+function primeFactors(n){
+  var factors = [], 
+      divisor = 2;
+  
+  while(n>2){
+    if(n % divisor == 0){
+       factors.push(divisor); 
+       n= n/ divisor;
+    }
+    else{
+      divisor++;
+    }     
+  }
+  return factors;
+}
+
+    console.log(primeFactors(69));
+  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

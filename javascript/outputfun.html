@@ -1,0 +1,21 @@
+<head>
+    <script>
+        function DeleteClick(){
+            var con = confirm("Record will be deleted");
+            console.info("Delete Button Clicked");
+            if (con==true){
+                document.write("Delete Successfully...");
+                console.error("Record Deleted as client selected yes");
+            }
+            else{
+                document.getElementById("msg").innerHTML=
+                "<font color='red'> Delete Canceled</font>";
+                console.warn("Delete action canceled as client selected cancel")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p id="msg" align="center"></p>
+</body>

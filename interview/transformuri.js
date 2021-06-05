@@ -1,0 +1,19 @@
+const { write } = require("fs");
+
+/* var arr = ["hi@","hu$"];
+        let resultingArray=[];
+        for(var i=0;i<arr.length;i++){
+            console.log(arr[i]);
+            resultingArray.push(encodeURIComponent(arr[i]));
+        }
+        console.log(resultingArray); */
+        function transform(arr){
+            //var arr = ["hi@","hu$"];
+        let resultingArray=[];
+        for(var i=0;i<arr.length;i++){
+            //console.log(arr[i]);
+            resultingArray.push(encodeURIComponent(arr[i]));
+        }
+         return resultingArray;
+                }
+        console.log(transform(["hi$","hi@"]));

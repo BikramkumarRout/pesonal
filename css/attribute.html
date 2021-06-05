@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* apply to every paragraph 
+        p[class *="effect"]{
+            background-color:yellow;
+        }
+        apply to first and second
+        p[class ^="effect"]{
+            background-color: yellow;
+        } 
+        apply to first and third */
+        p[class $="effect"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="effect">Para-1</p>
+    <p class="effectText">Para-2</p>
+    <p class="Texteffect">Para-3</p>
+    <p class="TexteffectPara">Para-4</p>
+</body>
+</html>

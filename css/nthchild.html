@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>structural pseudo Selector</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       thead{
+           background-color: darkcyan;
+           color: white;
+       }
+       tbody>tr:nth-child(odd){
+           background-color: thistle;
+       }
+       tbody>tr:nth-child(even){
+           background-color: lightgreen;
+       }
+    </style>
+</head>
+<body>
+    <table border="1" width="400">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tv</td>
+                <td>34500.55</td>
+            </tr>
+            <tr>
+                <td>Nike Casuals</td>
+                <td>4300.99</td>
+            </tr>
+            <tr>
+                <td>Jeans</td>
+                <td>3000.99</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

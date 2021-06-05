@@ -1,0 +1,15 @@
+<script>
+    class Database{
+        constructor(dbName){
+            document.write(`Connected to ${dbName} <br>`);
+        }
+        insert(){
+            document.write(`Record Inserted <br>`);
+        }
+        delete(){
+            document.write(`Record Deleted <br>`);
+        }
+    }
+    let oracle = new Database("oracle");
+    oracle.insert();
+</script>

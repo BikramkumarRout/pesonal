@@ -1,0 +1,30 @@
+<head>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#animate").click(function(){
+                $("#box").animate({
+                    left:'200px',
+                    height:'200px',
+                    width:'200px',
+                    opacity:'0.5'
+                });
+            });
+            $("#reset").click( function(){
+                $("#box").animate({
+                    left:'0px',
+                    height:'100px',
+                    width:'100px',
+                    opacity:'1.0'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="animate">Animate</button>
+    <button id="reset">Reset</button>
+    <br><br>
+    <img src="../images/tv.jpg" alt="tv" id="box" style="width:100px;height:100px;
+    position:absolute;">
+</body>

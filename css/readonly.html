@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabled | Readonly</title>
+    <style>
+        button:enabled{
+            cursor: grab;
+            background-color: yellow;
+        }
+        input:read-only{
+           background-color: lightgray;
+           cursor: not-allowed;
+        }
+        button:disabled{
+            cursor: not-allowed;
+            background-color: darkgray;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    Name:
+    <input type="text" value="Biki" readonly>
+    <button disabled>Register</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<head>
+  <link rel="stylesheet" href="../node_modules/fonts/css/all.css">
+  <script>
+    
+    function fibonacci(n){
+      var fibo = [0,1];
+
+      if (n <= 2) return 1;
+
+      for(var i =2; i <= n; i++){
+          fibo[i] = fibo[i-1] + fibo[i-2];
+      }
+      return fibo[n];
+      
+    }
+    alert(fibonacci(8));
+
+  </script>
+</head>

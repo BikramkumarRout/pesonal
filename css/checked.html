@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>  
+       input[type="checkbox"]+span{
+           color: red;
+       }
+       input[type="checkbox"]:checked+span{
+           color: green;
+       }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Terms of Service</legend>
+        <textarea cols="40" rows="4" disabled>
+            Our Terms and conditions
+        </textarea>
+        <br>
+        <input type="checkbox"><span>I accept</span>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeze method</title>
+</head>
+<body>
+    <h2 style="text-align: center;color: red;">restrict a property in a Object</h2>
+    <script>
+        let profile = {
+            name: 'techsith'
+        };
+        //unable to add or modify properties
+        //Object.freeze(profile);
+//unable to add or remove but can modify the property
+        //Object.seal(profile);
+        
+    // restricting a particular property of an object
+          Object.defineProperty(profile,'age',{
+              value:3,
+              writable:false
+          })
+        profile.name = 'interviewnest';
+        profile.age = 4;
+        console.log(profile);
+        console.log(Math.max());
+        console.log(Math.min());
+        console.dir(Object.prototype);
+    </script>
+</body>
+</html>

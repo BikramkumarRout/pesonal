@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Classes For Validation</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .poorstyle{
+            border:1px solid red;
+            box-shadow: 0px 4px 5px red;
+        }
+        .weakstyle{
+            border: 1px solid yellow;
+            box-shadow: 0px 4px 5px yellow;
+        }
+        .strongstyle{
+            border: 1px solid green;
+            box-shadow: 0px 4px 5px green;
+        }
+        input[type="password"]{
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function VerifyPassword(){
+            var pwd = document.getElementById("txtPwd");
+            var regExp = /(?=.*[A-Z])\w{4,15}/;
+            if(pwd.value.match(regExp)){
+                pwd.className= "strongstyle"
+            }else{
+                if(pwd.value.length<4){
+                    pwd.className = "poorstyle";
+                }else{
+                    pwd.className = "weakstyle";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+     <label>Password</label>
+     <div>
+         <input type="password" id="txtPwd" onkeyup="VerifyPassword()">
+     </div>
+    </div>
+</body>
+</html>

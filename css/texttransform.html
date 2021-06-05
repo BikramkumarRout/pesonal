@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform & Text Decoration</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       dt{
+           background-color: gainsboro;
+       }
+       #upper{
+           text-transform: uppercase;
+           text-decoration: overline underline;
+           text-decoration-style: wavy;
+       }
+       #lower{
+           text-transform: lowercase;
+           text-decoration-line: underline overline;
+       }
+       #title{
+           text-transform: capitalize;
+           text-decoration: underline wavy red;
+       }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Upper Case</dt>
+        <dd id="upper">Welcome to CSS</dd>
+        <dt>Lower Case</dt>
+        <dd id="lower">Welcome to Javascript</dd>
+        <dt>Capitalize</dt>
+        <dd id="title">Welcome to Html</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<head>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            var userName = prompt("Enter your Name");
+            if(userName == null){
+                $("#msg").text('You Canceled');
+            }else if(userName == ""){
+               $("#msg").text('Name can not be Empty');
+            }else{
+                $("#msg").text(`Hello ! ${userName}`);    
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="msg"></div>
+</body>

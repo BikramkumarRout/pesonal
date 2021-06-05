@@ -1,0 +1,19 @@
+<head>
+    <script>
+        function CreateClick(){
+            folderName =prompt("Enter folder Name","New_folder");
+            if(folderName ==""){
+                document.write("Please provide a Name");
+            }else if(folderName==null){
+                document.write("You Canceled..");
+            }else{
+                document.getElementById("msg").innerHTML +=
+                "folder created;"+ folderName + "<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="CreateClick()">Create folder</button>
+    <div id="msg"></div>
+</body>

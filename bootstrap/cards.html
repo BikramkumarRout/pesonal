@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Cards</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       .img{
+         opacity: 0.6;
+         width: 200px;
+         height: 200px;
+       }
+       .card{
+         box-shadow: 0px 0px 15px red;
+         border: 2px double red;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h2 class="text-center">Amazon Shopping</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="../images/shoe.jpg" alt="shoe">
+          <div class="card-body card-img-overlay">
+            <h2 class="card-title">70% off on shoes</h2>
+            <h4 class="card-subtitle">From 28 to 29 june</h4>
+          </div>
+          <div class="card-footer">
+            <p class="card-text">Some text......</p>
+            <a href="#" class="btn btn-primary">More...</a>
+          </div>
+        </div>
+        <div class="card border-warning">
+          <div class="card-header">
+            <h2 class="card-title">20% off on Electronics</h2>
+            <h4 class="card-subtitle">from 28 to 29 june</h4>
+          </div>
+          <div class="card-body">
+            <img src="../images/tv.jpg" alt="tv" width="200" height="200">
+          </div>
+          <div class="card-footer">
+             <p class="card-text">Some text...</p>
+             <a href="#" class="btn btn-primary">more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
